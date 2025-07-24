@@ -4,24 +4,147 @@
 
 CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML. CSS describes how elements should be rendered on screen, on paper, or in other media.
 
+## CSS Syntax
+
+CSS follows a simple syntax structure:
+
+```css
+selector {
+    property: value;
+    property: value;
+}
+```
+
+**Components:**
+- **Selector**: Targets the HTML element(s) to style
+- **Property**: The style attribute you want to change
+- **Value**: The setting for the property
+- **Declaration**: A property-value pair
+- **Declaration Block**: All declarations enclosed in curly braces
+
+**Example:**
+```css
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+```
+
+## Basic CSS Properties
+
+### Text Properties
+- `color`: Sets text color
+- `font-size`: Sets text size
+- `font-family`: Sets font type
+- `font-weight`: Sets text thickness (bold, normal)
+- `text-align`: Aligns text (left, center, right)
+
+### Background Properties
+- `background-color`: Sets background color
+- `background-image`: Sets background image
+
+### Box Model Properties
+- `margin`: Space outside the element
+- `padding`: Space inside the element
+- `border`: Border around the element
+- `width`: Element width
+- `height`: Element height
+
 ## Types of CSS Application
 
-There are three main ways to apply CSS to HTML documents:
-
 ### 1. Inline CSS
-- CSS is applied directly to HTML elements using the `style` attribute
-- Highest specificity but not recommended for large projects
-- Example: `<p style="color: red;">Text</p>`
+CSS is applied directly to HTML elements using the `style` attribute.
+
+**Syntax:**
+```html
+<element style="property: value; property: value;">Content</element>
+```
+
+**Example:**
+```html
+<p style="color: red; font-size: 18px;">This is red text</p>
+```
+
+**Characteristics:**
+- Highest specificity
+- Applied to individual elements
+- Not recommended for large projects
 
 ### 2. Internal CSS
-- CSS is written within `<style>` tags in the HTML document's `<head>` section
-- Applies only to the current HTML document
+CSS is written within `<style>` tags in the HTML document's `<head>` section.
+
+**Syntax:**
+```html
+<head>
+    <style>
+        selector {
+            property: value;
+        }
+    </style>
+</head>
+```
+
+**Example:**
+```html
+<head>
+    <style>
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+```
+
+**Characteristics:**
+- Applies to the entire HTML document
 - Good for single-page styling
+- Better than inline for multiple elements
 
 ### 3. External CSS
-- CSS is written in separate `.css` files and linked to HTML documents
-- Most recommended approach for maintainability and reusability
-- Linked using `<link>` tag in the HTML `<head>` section
+CSS is written in separate `.css` files and linked to HTML documents.
+
+**Two Ways to Apply External CSS:**
+
+#### Method 1: Using `<link>` Tag (Recommended)
+**Syntax:**
+```html
+<head>
+    <link rel="stylesheet" href="path/to/stylesheet.css">
+</head>
+```
+
+**Example:**
+```html
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+```
+
+#### Method 2: Using `@import` Rule
+**Syntax:**
+```html
+<head>
+    <style>
+        @import url("path/to/stylesheet.css");
+    </style>
+</head>
+```
+
+**Example:**
+```html
+<head>
+    <style>
+        @import url("styles.css");
+    </style>
+</head>
+```
+
+**Characteristics:**
+- Most recommended approach
+- Reusable across multiple pages
+- Better performance and maintainability
+- `<link>` method loads faster than `@import`
 
 ## Benefits of CSS
 
@@ -30,3 +153,4 @@ There are three main ways to apply CSS to HTML documents:
 - Easier maintenance and updates
 - Better performance through caching
 - Responsive design capabilities
+- Consistent styling across website
