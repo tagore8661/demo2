@@ -1,0 +1,166 @@
+/* CSS Combining Selectors Examples */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* 1. ELEMENT + CLASS COMBINATIONS */
+/* Targets paragraph elements with class 'highlight' */
+p.highlight {
+    background-color: yellow;
+    padding: 10px;
+    border-left: 4px solid orange;
+}
+
+/* Targets div elements with class 'highlight' */
+div.highlight {
+    background-color: lightblue;
+    padding: 15px;
+    border: 2px solid blue;
+}
+
+/* Targets span elements with class 'highlight' */
+span.highlight {
+    background-color: lightgreen;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* 2. CLASS + CLASS COMBINATIONS */
+/* Targets elements that have BOTH 'box' AND 'primary' classes */
+.box.primary {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Targets elements that have BOTH 'box' AND 'secondary' classes */
+.box.secondary {
+    background-color: #6c757d;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Targets elements that have BOTH 'text' AND 'large' classes */
+.text.large {
+    font-size: 24px;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+/* 3. ID + CLASS COMBINATIONS */
+/* Targets element with ID 'special' that also has class 'container' */
+#special.container {
+    background-color: #28a745;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Targets element with ID 'unique' that also has class 'highlight' */
+#unique.highlight {
+    background-color: #ffc107;
+    color: #212529;
+    padding: 15px;
+    border: 3px dashed #fd7e14;
+    font-weight: bold;
+}
+
+/* 4. DESCENDANT COMBINATIONS */
+/* Targets elements with class 'child' inside elements with class 'parent' */
+.parent .child {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 3px solid #6f42c1;
+}
+
+/* Targets li elements with class 'item' inside ul with class 'menu' */
+.wrapper .menu .item {
+    list-style: none;
+    padding: 8px 15px;
+    background-color: #f8f9fa;
+    margin: 2px 0;
+    border-radius: 3px;
+}
+
+/* Targets elements with BOTH 'item' AND 'active' classes inside menu */
+.wrapper .menu .item.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* 5. COMPLEX COMBINATIONS */
+/* Targets article elements with BOTH 'post' AND 'featured' classes */
+article.post.featured {
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f8fff9;
+}
+
+/* Targets h3 with class 'title' inside featured posts */
+article.post.featured .title {
+    color: #28a745;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Targets paragraphs with class 'content' inside featured posts */
+article.post.featured .content {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Targets div with class 'meta' inside featured posts */
+article.post.featured .meta {
+    border-top: 1px solid #dee2e6;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Targets spans inside meta div of featured posts */
+article.post.featured .meta span {
+    margin-right: 15px;
+}
+
+/* Targets span with class 'author' inside meta of featured posts */
+article.post.featured .meta .author {
+    font-weight: bold;
+    color: #495057;
+}
+
+/* Targets span with class 'date' inside meta of featured posts */
+article.post.featured .meta .date {
+    font-style: italic;
+}

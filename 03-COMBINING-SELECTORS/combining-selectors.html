@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combining CSS Selectors</title>
+    <link rel="stylesheet" href="combining-styles.css">
+</head>
+<body>
+    <h1>Combining CSS Selectors Examples</h1>
+    
+    <!-- Element + Class Combination -->
+    <section>
+        <h2>Element + Class Combination</h2>
+        <p class="highlight">This paragraph has class 'highlight'</p>
+        <div class="highlight">This div also has class 'highlight'</div>
+        <span class="highlight">This span has class 'highlight'</span>
+    </section>
+
+    <!-- Class + Class Combination -->
+    <section>
+        <h2>Class + Class Combination</h2>
+        <div class="box primary">Box with both 'box' and 'primary' classes</div>
+        <div class="box secondary">Box with both 'box' and 'secondary' classes</div>
+        <p class="text large">Text with both 'text' and 'large' classes</p>
+    </section>
+
+    <!-- ID + Class Combination -->
+    <section>
+        <h2>ID + Class Combination</h2>
+        <div id="special" class="container">Element with ID 'special' and class 'container'</div>
+        <p id="unique" class="highlight">Paragraph with ID 'unique' and class 'highlight'</p>
+    </section>
+
+    <!-- Descendant Combinations -->
+    <section>
+        <h2>Descendant Combinations</h2>
+        <div class="parent">
+            <p class="child">Child paragraph inside parent div</p>
+            <span class="child">Child span inside parent div</span>
+        </div>
+        <div class="wrapper">
+            <ul class="menu">
+                <li class="item">Menu item 1</li>
+                <li class="item active">Active menu item</li>
+                <li class="item">Menu item 3</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Complex Combinations -->
+    <section>
+        <h2>Complex Combinations</h2>
+        <article class="post featured">
+            <h3 class="title">Featured Post Title</h3>
+            <p class="content">This is the content of a featured post.</p>
+            <div class="meta">
+                <span class="author">By John Doe</span>
+                <span class="date">January 15, 2024</span>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
