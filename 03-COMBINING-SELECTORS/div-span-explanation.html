@@ -7,92 +7,23 @@
     <link rel="stylesheet" href="div-span-styles.css">
 </head>
 <body>
-    <h1>Understanding DIV and SPAN Tags</h1>
+    <h1>DIV vs SPAN Tags</h1>
 
-    <!-- DIV Examples -->
-    <section class="explanation-section">
-        <h2>DIV Tag - Block Level Element</h2>
-        <p class="description">DIV is a block-level container element that takes full width and starts on a new line.</p>
-        
-        <div class="example-div">
-            This is a DIV element. It's a block-level element.
-        </div>
-        <div class="example-div">
-            This is another DIV. Notice it starts on a new line.
-        </div>
-        
-        <h3>DIV as Container</h3>
-        <div class="container">
-            <div class="header">Header Section</div>
-            <div class="content">
-                <p>Content inside a DIV container</p>
-                <p>Multiple paragraphs can be grouped</p>
-            </div>
-            <div class="footer">Footer Section</div>
-        </div>
-    </section>
+    <!-- DIV Example -->
+    <h2>DIV - Block Element</h2>
+    <div class="box">This is a DIV (takes full width)</div>
+    <div class="box">Another DIV (starts on new line)</div>
 
-    <!-- SPAN Examples -->
-    <section class="explanation-section">
-        <h2>SPAN Tag - Inline Element</h2>
-        <p class="description">SPAN is an inline element that only takes necessary width and doesn't break the line.</p>
-        
-        <p>This paragraph contains <span class="highlight-span">highlighted text using SPAN</span> and continues on the same line.</p>
-        
-        <p>You can have <span class="red-text">multiple</span> <span class="blue-text">colored</span> <span class="green-text">words</span> in the same line using SPAN.</p>
-        
-        <h3>SPAN for Styling Parts of Text</h3>
-        <p class="styled-paragraph">
-            The <span class="brand">Company Name</span> was founded in <span class="year">2020</span> and has grown to serve <span class="number">1000+</span> customers worldwide.
-        </p>
-    </section>
+    <!-- SPAN Example -->
+    <h2>SPAN - Inline Element</h2>
+    <p>This text has <span class="highlight">highlighted words</span> using SPAN tags.</p>
+    <p>SPAN elements <span class="red">stay</span> <span class="blue">on</span> <span class="green">same</span> line.</p>
 
     <!-- Comparison -->
-    <section class="explanation-section">
-        <h2>DIV vs SPAN Comparison</h2>
-        
-        <div class="comparison-container">
-            <div class="comparison-item">
-                <h4>DIV Characteristics:</h4>
-                <ul>
-                    <li>Block-level element</li>
-                    <li>Takes full width available</li>
-                    <li>Starts on new line</li>
-                    <li>Can contain other block and inline elements</li>
-                    <li>Used for layout and grouping</li>
-                </ul>
-            </div>
-            
-            <div class="comparison-item">
-                <h4>SPAN Characteristics:</h4>
-                <ul>
-                    <li>Inline element</li>
-                    <li>Takes only necessary width</li>
-                    <li>Stays on same line</li>
-                    <li>Can only contain inline elements</li>
-                    <li>Used for styling parts of text</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Practical Examples -->
-    <section class="explanation-section">
-        <h2>Practical Usage Examples</h2>
-        
-        <div class="card">
-            <div class="card-header">
-                <span class="card-title">Product Card</span>
-                <span class="card-price">$29.99</span>
-            </div>
-            <div class="card-body">
-                <p>This card uses <span class="emphasis">DIV for structure</span> and <span class="emphasis">SPAN for inline styling</span>.</p>
-            </div>
-            <div class="card-footer">
-                <span class="status available">Available</span>
-                <span class="rating">★★★★☆</span>
-            </div>
-        </div>
-    </section>
+    <h2>Key Differences</h2>
+    <div class="comparison">
+        <p><strong>DIV:</strong> Block element, full width, new line</p>
+        <p><strong>SPAN:</strong> Inline element, only needed width, same line</p>
+    </div>
 </body>
 </html>
