@@ -1,0 +1,29 @@
+/* External CSS file */
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.intro {
+    color: maroon;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+}
+
+li {
+    color: #666;
+    margin: 5px 0;
+}
