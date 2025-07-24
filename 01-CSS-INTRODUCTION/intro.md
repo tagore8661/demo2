@@ -146,6 +146,46 @@ CSS is written in separate `.css` files and linked to HTML documents.
 - Better performance and maintainability
 - `<link>` method loads faster than `@import`
 
+## Why CSS is Called "Cascading"?
+
+CSS is called "Cascading" because styles "cascade" or flow down from multiple sources and get applied in a specific order of priority. Think of it like a waterfall where water flows from top to bottom.
+
+### How Cascading Works:
+
+1. **Multiple Style Sources**: You can have styles from different places:
+   - Browser default styles
+   - External CSS files
+   - Internal CSS (in `<style>` tags)
+   - Inline CSS (in `style` attributes)
+
+2. **Priority Order** (from lowest to highest):
+   - Browser defaults
+   - External CSS
+   - Internal CSS
+   - Inline CSS
+
+3. **The Last Rule Wins**: If there are conflicting styles of the same priority, the last one applied wins.
+
+**Example:**
+```css
+/* External CSS */
+p { color: blue; }
+
+/* Internal CSS - This will override external */
+p { color: red; }
+```
+
+**Result**: Paragraphs will be red because internal CSS has higher priority than external CSS.
+
+### Inheritance:
+Some CSS properties are inherited from parent elements to child elements, like a family trait passed down from parents to children.
+
+**Example:**
+```css
+body { color: green; }
+/* All text inside body will be green unless specifically changed */
+```
+
 ## Benefits of CSS
 
 - Separation of content and presentation
