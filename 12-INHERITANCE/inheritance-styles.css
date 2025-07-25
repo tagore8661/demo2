@@ -1,0 +1,124 @@
+/* CSS Inheritance Examples */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    /* These properties are inherited by all child elements */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Basic inheritance example */
+.parent {
+    /* Inherited properties */
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    
+    /* Non-inherited properties */
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid blue;
+    margin: 20px 0;
+}
+
+/* Child elements automatically inherit color, font-size, font-weight, text-align */
+.parent p, .parent span, .parent li {
+    /* color: blue; - inherited */
+    /* font-size: 18px; - inherited */
+    /* font-weight: bold; - inherited */
+    /* text-align: center; - inherited */
+    
+    /* These are NOT inherited */
+    /* background-color: transparent; */
+    /* padding: 0; */
+    /* border: none; */
+    /* margin: 0; */
+}
+
+/* Non-inherited properties example */
+.box-parent {
+    background-color: yellow;
+    padding: 30px;
+    border: 3px solid orange;
+    width: 300px;
+    height: 100px;
+    margin: 20px 0;
+}
+
+.box-child {
+    /* These properties are NOT inherited from parent */
+    background-color: white; /* Default, not yellow */
+    padding: 10px; /* Not 30px */
+    border: 1px solid gray; /* Not 3px solid orange */
+    /* width and height are also not inherited */
+}
+
+/* Forced inheritance example */
+.force-parent {
+    background-color: lightgreen;
+    padding: 25px;
+    border: 2px dashed green;
+    margin: 20px 0;
+}
+
+.force-child {
+    /* Force inheritance of normally non-inherited properties */
+    background-color: inherit; /* Inherits lightgreen */
+    padding: inherit; /* Inherits 25px */
+    border: inherit; /* Inherits 2px dashed green */
+}
+
+/* Inheritance chain example */
+.grandparent {
+    color: red;
+    font-family: Georgia, serif;
+    background-color: #ffe6e6;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.middle-parent {
+    font-size: 20px;
+    font-weight: bold;
+    /* Inherits color: red and font-family from grandparent */
+}
+
+.grandchild {
+    text-transform: uppercase;
+    /* Inherits color: red, font-family: Georgia, font-size: 20px, font-weight: bold */
+}
+
+/* Override inheritance example */
+.override-parent {
+    color: purple;
+    font-size: 16px;
+    background-color: #f0e6ff;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.normal-child {
+    /* Inherits color: purple and font-size: 16px */
+}
+
+.override-child {
+    /* Override inherited color */
+    color: green;
+    /* Keep inherited font-size: 16px */
+}
+
+/* Additional styling */
+h1, h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin: 10px 0;
+}
+
+li {
+    margin: 5px 0;
+}

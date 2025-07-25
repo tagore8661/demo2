@@ -1,0 +1,163 @@
+/* CSS Typography Examples */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Font Families */
+.serif {
+    font-family: "Times New Roman", Georgia, serif;
+}
+
+.sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.monospace {
+    font-family: "Courier New", Monaco, monospace;
+    background-color: #f4f4f4;
+    padding: 5px;
+}
+
+.google-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Font Weights */
+.light {
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.normal {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Font Sizes */
+.small {
+    font-size: 14px;
+}
+
+.medium {
+    font-size: 18px;
+}
+
+.large {
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Text Transform */
+.uppercase {
+    text-transform: uppercase;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.lowercase {
+    text-transform: lowercase;
+    color: #28a745;
+    font-style: italic;
+}
+
+.capitalize {
+    text-transform: capitalize;
+    color: #dc3545;
+    font-weight: 500;
+}
+
+/* Text Decoration */
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #007bff;
+    text-decoration-thickness: 2px;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.overline {
+    text-decoration: overline;
+    color: #28a745;
+}
+
+.no-decoration {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.no-decoration:hover {
+    text-decoration: underline;
+}
+
+/* Text Alignment */
+.left {
+    text-align: left;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+    background-color: #e9ecef;
+    padding: 10px;
+}
+
+.right {
+    text-align: right;
+    background-color: #dee2e6;
+    padding: 10px;
+}
+
+.justify {
+    text-align: justify;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-left: 4px solid #007bff;
+}
+
+/* Additional Typography Properties */
+p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Responsive Typography */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .large {
+        font-size: 20px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+}

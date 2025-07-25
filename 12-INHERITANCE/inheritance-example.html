@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inheritance Example</title>
+    <link rel="stylesheet" href="inheritance-styles.css">
+</head>
+<body>
+    <h1>CSS Inheritance Examples</h1>
+    
+    <!-- Basic inheritance -->
+    <div class="parent">
+        <h2>Parent Container</h2>
+        <p>This paragraph inherits color and font from parent.</p>
+        <span>This span also inherits parent styles.</span>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+        </ul>
+    </div>
+    
+    <!-- Non-inherited properties -->
+    <div class="box-parent">
+        <div class="box-child">Child doesn't inherit box properties</div>
+    </div>
+    
+    <!-- Forced inheritance -->
+    <div class="force-parent">
+        <div class="force-child">This child forces inheritance</div>
+    </div>
+    
+    <!-- Inheritance chain -->
+    <div class="grandparent">
+        <div class="middle-parent">
+            <p class="grandchild">Inherits from multiple ancestors</p>
+        </div>
+    </div>
+    
+    <!-- Override inheritance -->
+    <div class="override-parent">
+        <p class="normal-child">Normal inherited text</p>
+        <p class="override-child">Overridden text color</p>
+    </div>
+</body>
+</html>

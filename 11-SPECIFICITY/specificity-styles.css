@@ -1,0 +1,105 @@
+/* CSS Specificity Examples */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Element selector - Specificity: 0-0-0-1 (1 point) */
+p {
+    color: black;
+    font-size: 16px;
+}
+
+/* Class selector - Specificity: 0-0-1-0 (10 points) - WINS over element */
+.highlight {
+    color: blue;
+    background-color: lightblue;
+    padding: 5px;
+}
+
+/* ID selector - Specificity: 0-1-0-0 (100 points) - WINS over class */
+#special {
+    color: red;
+    font-weight: bold;
+}
+
+/* Inline style in HTML - Specificity: 1-0-0-0 (1000 points) - WINS over ID */
+/* <p style="color: orange;"> */
+
+/* Multiple classes - Specificity: 0-0-3-1 (31 points) */
+div.box.primary.large {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Complex selector - Specificity: 0-0-3-2 (32 points) */
+.container .menu .item.active {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    list-style: none;
+}
+
+/* !important overrides higher specificity */
+.important-text {
+    color: purple !important; /* Overrides ID selector */
+    font-size: 18px;
+}
+
+/* Specificity calculation examples */
+
+/* Specificity: 0-0-0-1 (1 point) */
+.example-1 {
+    color: gray;
+}
+
+/* Specificity: 0-0-1-1 (11 points) - WINS */
+p.example-1 {
+    color: green;
+}
+
+/* Specificity: 0-0-1-0 (10 points) */
+.example-2 {
+    color: blue;
+}
+
+/* Specificity: 0-0-2-0 (20 points) - WINS */
+.examples .example-2 {
+    color: purple;
+}
+
+/* Specificity: 0-1-0-0 (100 points) - WINS over all classes */
+#example-id {
+    color: red;
+    font-weight: bold;
+}
+
+/* Basic styling */
+.container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+}
+
+.examples {
+    border: 2px solid #dee2e6;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.examples p {
+    margin: 10px 0;
+    padding: 8px;
+    border-left: 4px solid #007bff;
+    background-color: #f8f9fa;
+}

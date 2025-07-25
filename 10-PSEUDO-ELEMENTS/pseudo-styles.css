@@ -1,0 +1,105 @@
+/* Pseudo Elements Examples */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* ::before pseudo-element */
+.star-heading::before {
+    content: "★ ";
+    color: gold;
+    font-size: 1.2em;
+}
+
+.quote::before {
+    content: """;
+    font-size: 2em;
+    color: #666;
+    line-height: 0;
+    vertical-align: -0.4em;
+}
+
+/* ::after pseudo-element */
+.quote::after {
+    content: """;
+    font-size: 2em;
+    color: #666;
+    line-height: 0;
+    vertical-align: -0.4em;
+}
+
+.price::after {
+    content: " USD";
+    color: #666;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+/* External links with arrow */
+a[href^="http"]::after {
+    content: " ↗";
+    color: #007bff;
+    font-size: 0.8em;
+}
+
+/* ::first-letter pseudo-element */
+.article::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    float: left;
+    margin: 0 5px 0 0;
+    line-height: 0.8;
+}
+
+/* ::first-line pseudo-element */
+.article::first-line {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* ::selection pseudo-element */
+::selection {
+    background-color: #007bff;
+    color: white;
+}
+
+.selectable::selection {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Basic styling */
+.quote {
+    font-style: italic;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #28a745;
+    display: block;
+    margin: 20px 0;
+}
+
+.article {
+    margin: 30px 0;
+    text-align: justify;
+    max-width: 600px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}

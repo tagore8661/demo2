@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity Example</title>
+    <link rel="stylesheet" href="specificity-styles.css">
+</head>
+<body>
+    <h1>CSS Specificity Examples</h1>
+    
+    <!-- Element vs Class vs ID -->
+    <p class="highlight" id="special">This text shows specificity hierarchy</p>
+    
+    <!-- Inline style (highest specificity) -->
+    <p class="highlight" id="special" style="color: orange;">Inline style wins</p>
+    
+    <!-- Multiple classes -->
+    <div class="box primary large">Multiple classes example</div>
+    
+    <!-- Complex selectors -->
+    <div class="container">
+        <ul class="menu">
+            <li class="item active">Menu item with multiple selectors</li>
+        </ul>
+    </div>
+    
+    <!-- Important declaration -->
+    <p class="important-text" id="important">Important declaration example</p>
+    
+    <!-- Specificity calculation examples -->
+    <div class="examples">
+        <p class="example-1">Example 1: Element selector</p>
+        <p class="example-2">Example 2: Class selector</p>
+        <p class="example-3" id="example-id">Example 3: ID selector</p>
+    </div>
+</body>
+</html>
