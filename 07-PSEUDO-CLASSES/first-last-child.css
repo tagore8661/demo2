@@ -1,0 +1,73 @@
+/* First and Last Child Pseudo Classes */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* First Child Selector */
+/* Styles the first list item */
+.menu li:first-child {
+    background-color: #e6ffe6;
+    color: green;
+    font-weight: bold;
+    border-left: 4px solid green;
+}
+
+/* Styles the first paragraph in article */
+article p:first-child {
+    font-size: 18px;
+    color: #007bff;
+    margin-top: 0;
+}
+
+/* Last Child Selector */
+/* Styles the last list item */
+.menu li:last-child {
+    background-color: #ffe6e6;
+    color: red;
+    font-weight: bold;
+    border-left: 4px solid red;
+}
+
+/* Styles the last paragraph in article */
+article p:last-child {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+/* Only Child Selector */
+/* Styles paragraphs that are the only child */
+p:only-child {
+    text-align: center;
+    background-color: #fff3cd;
+    border: 2px dashed #856404;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Basic styling */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.menu li {
+    padding: 10px;
+    margin: 2px 0;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+article {
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.single {
+    margin: 20px 0;
+}

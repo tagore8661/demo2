@@ -1,0 +1,53 @@
+/* Exact Match Selector Examples */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Selects inputs with exact type="text" */
+[type="text"] {
+    border: 2px solid green;
+    background-color: #f0fff0;
+}
+
+/* Selects inputs with exact type="email" */
+[type="email"] {
+    border: 2px solid blue;
+    background-color: #f0f8ff;
+}
+
+/* Selects elements with exact class="highlight" */
+[class="highlight"] {
+    background-color: yellow;
+    padding: 10px;
+    border: 1px solid orange;
+}
+
+/* Selects buttons with exact type="submit" */
+[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+/* Basic styling */
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+div {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

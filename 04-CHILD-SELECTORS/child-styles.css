@@ -1,0 +1,80 @@
+/* Child Selectors Examples */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* 1. Direct Child Selector (>) */
+/* Only targets direct child paragraphs, not nested ones */
+.container > p {
+    color: blue;
+    font-weight: bold;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+/* 2. First Child Selector */
+/* Styles the first list item */
+.menu li:first-child {
+    color: red;
+    font-weight: bold;
+    background-color: #ffe6e6;
+}
+
+/* 3. Last Child Selector */
+/* Styles the last list item */
+.menu li:last-child {
+    color: green;
+    font-weight: bold;
+    background-color: #e6ffe6;
+}
+
+/* 4. Nth Child Selector */
+/* Styles even rows in table */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Styles odd rows in table */
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* 5. Only Child Selector */
+/* Styles paragraphs that are the only child */
+p:only-child {
+    text-align: center;
+    color: purple;
+    border: 2px dashed purple;
+    padding: 15px;
+}
+
+/* Basic styling */
+.container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin: 2px 0;
+    background-color: #f9f9f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}

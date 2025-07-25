@@ -1,0 +1,55 @@
+/* Starts With Selector Examples */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Selects links that start with "https" */
+[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* Selects links that start with "mailto" */
+[href^="mailto"] {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Selects elements with class starting with "btn" */
+[class^="btn"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Selects images with src starting with "icon" */
+[src^="icon"] {
+    border: 3px solid #ffc107;
+    border-radius: 50%;
+}
+
+/* Basic styling */
+a {
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+img {
+    margin: 10px 5px;
+    width: 50px;
+    height: 50px;
+}

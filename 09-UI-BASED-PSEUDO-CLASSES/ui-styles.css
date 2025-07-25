@@ -1,0 +1,159 @@
+/* UI-Based Pseudo Classes Examples */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+section {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+/* Form Input States */
+input {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Enabled State */
+input:enabled {
+    background-color: white;
+    color: #495057;
+}
+
+/* Disabled State */
+input:disabled {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Read-only State */
+input:read-only {
+    background-color: #e9ecef;
+    color: #495057;
+    border-style: dashed;
+}
+
+/* Required Fields */
+input:required {
+    border-left: 4px solid #ffc107;
+}
+
+/* Optional Fields */
+input:optional {
+    border-left: 4px solid #28a745;
+}
+
+/* Valid State */
+input:valid {
+    border-color: #28a745;
+    background-color: #f8fff9;
+}
+
+/* Invalid State */
+input:invalid {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+}
+
+/* Checkbox and Radio States */
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+/* Checked State for Checkboxes */
+input[type="checkbox"]:checked {
+    accent-color: #007bff;
+}
+
+/* Checked State for Radio Buttons */
+input[type="radio"]:checked {
+    accent-color: #28a745;
+}
+
+/* Button States */
+button {
+    padding: 12px 24px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Enabled Button */
+button:enabled {
+    cursor: pointer;
+    opacity: 1;
+}
+
+button:enabled:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+/* Disabled Button */
+button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #495057;
+    display: block;
+}
+
+.form-group label {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+/* Focus States for Accessibility */
+input:focus, button:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Validation Feedback */
+input:required:valid::after {
+    content: "✓";
+    color: #28a745;
+    font-weight: bold;
+}
+
+input:required:invalid:not(:placeholder-shown) {
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}

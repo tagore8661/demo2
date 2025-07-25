@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibling Selectors Example</title>
+    <link rel="stylesheet" href="sibling-styles.css">
+</head>
+<body>
+    <h1>Sibling Selectors Examples</h1>
+    
+    <!-- Adjacent Sibling Example -->
+    <section>
+        <h2>Adjacent Sibling (+)</h2>
+        <p>This paragraph immediately follows h2</p>
+        <p>This is a regular paragraph</p>
+    </section>
+
+    <!-- General Sibling Example -->
+    <section>
+        <h3>General Sibling (~)</h3>
+        <div>This div comes after h3</div>
+        <p>First paragraph after h3</p>
+        <p>Second paragraph after h3</p>
+        <p>Third paragraph after h3</p>
+    </section>
+
+    <!-- Button Example -->
+    <div class="button-group">
+        <button>First Button</button>
+        <button>Second Button</button>
+        <button>Third Button</button>
+    </div>
+
+    <!-- Menu Example -->
+    <ul class="menu">
+        <li class="item">Item 1</li>
+        <li class="item active">Active Item</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI-Based Pseudo Classes Example</title>
+    <link rel="stylesheet" href="ui-styles.css">
+</head>
+<body>
+    <h1>UI-Based Pseudo Classes Examples</h1>
+    
+    <!-- Form States -->
+    <section>
+        <h2>Form Element States</h2>
+        <form>
+            <label>Required Email:</label>
+            <input type="email" required placeholder="Enter email">
+            
+            <label>Optional Phone:</label>
+            <input type="tel" placeholder="Enter phone">
+            
+            <label>Disabled Input:</label>
+            <input type="text" disabled value="Cannot edit this">
+            
+            <label>Read-only Input:</label>
+            <input type="text" readonly value="Read-only content">
+        </form>
+    </section>
+
+    <!-- Checkbox and Radio -->
+    <section>
+        <h2>Checkbox and Radio States</h2>
+        <div class="form-group">
+            <input type="checkbox" id="check1">
+            <label for="check1">Checkbox Option 1</label>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="check2" checked>
+            <label for="check2">Checked Checkbox</label>
+        </div>
+        
+        <div class="form-group">
+            <input type="radio" id="radio1" name="option">
+            <label for="radio1">Radio Option 1</label>
+        </div>
+        <div class="form-group">
+            <input type="radio" id="radio2" name="option" checked>
+            <label for="radio2">Selected Radio</label>
+        </div>
+    </section>
+
+    <!-- Button States -->
+    <section>
+        <h2>Button States</h2>
+        <button type="button">Enabled Button</button>
+        <button type="button" disabled>Disabled Button</button>
+        <button type="submit">Submit Button</button>
+    </section>
+
+    <!-- Validation Example -->
+    <section>
+        <h2>Validation States</h2>
+        <input type="email" placeholder="Valid email shows green">
+        <input type="url" placeholder="Valid URL shows green">
+        <input type="number" min="1" max="100" placeholder="Number 1-100">
+    </section>
+</body>
+</html>

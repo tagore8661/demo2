@@ -1,0 +1,80 @@
+/* Nth Child Pseudo Classes */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Nth Child - Even rows */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Nth Child - Odd rows */
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Nth Child - Specific position (3rd item) */
+.items li:nth-child(3) {
+    background-color: #ffc107;
+    color: #212529;
+    font-weight: bold;
+}
+
+/* Nth Child - Every 2nd item starting from 2nd */
+.items li:nth-child(2n) {
+    border-left: 4px solid #007bff;
+}
+
+/* Nth Child - Every 3rd box */
+.grid .box:nth-child(3n) {
+    background-color: #28a745;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Basic styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.items {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.items li {
+    padding: 10px;
+    margin: 3px 0;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #6c757d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}

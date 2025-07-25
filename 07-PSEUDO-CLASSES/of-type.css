@@ -1,0 +1,84 @@
+/* Of Type Pseudo Classes */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* First of Type */
+/* Styles the first h2 among h2 elements */
+h2:first-of-type {
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 5px;
+}
+
+/* Styles the first paragraph among paragraphs */
+p:first-of-type {
+    font-weight: bold;
+    background-color: #e6f3ff;
+    padding: 10px;
+    border-left: 4px solid #007bff;
+}
+
+/* Last of Type */
+/* Styles the last h2 among h2 elements */
+h2:last-of-type {
+    color: #dc3545;
+    border-bottom: 3px solid #dc3545;
+    padding-bottom: 5px;
+}
+
+/* Styles the last paragraph among paragraphs */
+p:last-of-type {
+    font-style: italic;
+    background-color: #ffe6e6;
+    padding: 10px;
+    border-left: 4px solid #dc3545;
+}
+
+/* Nth of Type */
+/* Styles every 2nd paragraph */
+p:nth-of-type(2n) {
+    background-color: #f8f9fa;
+    margin-left: 20px;
+}
+
+/* Only of Type */
+/* Styles images that are the only img in their container */
+img:only-of-type {
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #28a745;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+/* Basic styling */
+section {
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.gallery {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+article {
+    border: 1px solid #28a745;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100px;
+    height: 80px;
+    margin: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
