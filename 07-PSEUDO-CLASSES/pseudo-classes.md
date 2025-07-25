@@ -41,7 +41,7 @@ p:first-child {
 }
 ```
 
-### 2. :last-child
+### 2. :first-child
 
 **Definition:** Selects the last child element of its parent.
 
