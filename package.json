@@ -1,0 +1,22 @@
+{
+  "name": "css-learning-guide",
+  "version": "1.0.0",
+  "description": "A comprehensive CSS learning guide with examples and documentation",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Build completed - Static files ready'",
+    "start": "echo 'Starting development server'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "css",
+    "selectors",
+    "tutorial",
+    "learning",
+    "web-development"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
